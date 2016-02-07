@@ -3,7 +3,7 @@
 ## Install
 
 ```vim
-NeoBundle 'kawaz/batscheck.vim', {'depends': ['scrooloose/syntastic']}
+NeoBundle 'kawaz/shellcheck.vim', {'depends': ['scrooloose/syntastic']}
 ```
 
 ## Commands
