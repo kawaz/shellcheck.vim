@@ -2,9 +2,8 @@
 
 ## Install
 
-```vim:~/.vimrc
-" Syntastic
-NeoBundle 'kawaz/batscheck.vim', {'depends':['scrooloose/syntastic']}
+```vim
+NeoBundle 'kawaz/batscheck.vim', {'depends': ['scrooloose/syntastic']}
 ```
 
 ## Commands
