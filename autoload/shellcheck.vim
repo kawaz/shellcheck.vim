@@ -11,6 +11,10 @@ function! shellcheck#SuppressWarnings()
   for message in cur_messages
     let code = matchstr(message.text, '\[\zsSC[0-9]\+\ze\]$', 0, 1)
     let codes[code] = message.text
+    if code == "SC2148"
+      call append(0, "#!/bin/bash")
+      return
+    endif
   endfor
 
   let suppressCodes = []
