@@ -1,3 +1,6 @@
+let s:save_cpo = &cpo "{{{
+set cpo&vim "}}}
+
 function! shellcheck#SuppressWarnings()
   let codes = {}
   try
@@ -39,3 +42,6 @@ function! shellcheck#SuppressWarnings()
     endif
   endif
 endfunction
+
+let &cpo = s:save_cpo "{{{
+unlet s:save_cpo "}}}

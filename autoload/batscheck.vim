@@ -1,5 +1,5 @@
-let s:save_cpo = &cpo
-set cpo&vim
+let s:save_cpo = &cpo "{{{
+set cpo&vim "}}}
 
 let s:bin = fnamemodify(resolve(expand('<sfile>:p')), ':h:h') . "/bin"
 let s:wrapper_common = s:bin."/batscheck-wrapper.sh"
@@ -39,5 +39,5 @@ function! batscheck#initBuffer()
 
 endfunction
 
-let &cpo = s:save_cpo
-unlet s:save_cpo
+let &cpo = s:save_cpo "{{{
+unlet s:save_cpo "}}}
